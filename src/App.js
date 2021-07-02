@@ -3,6 +3,7 @@ import './style.css';
 import MyComp from './MyComp';
 import Funcomp from './HookUseMemo';
 import DualCounter from './Hooks/useCallbackHooks';
+import Calculator from './Hooks/UseReducerHooks';
 // import PrintList from './Hooks/useEffectHooks';
 export default function App() {
   const [countObj, setCount] = useState({ count: 0, userList: 'people' });
@@ -19,6 +20,7 @@ export default function App() {
       <MyComp />
       <Funcomp count={countObj.count} />
       <DualCounter />
+      <Calculator />
       {/* <PrintList userList={countObj.userList} /> */}
 
       <p>Start editing to see some magic happen :)</p>
